@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+table{
+    border: 1px solid;
+}
+.img{
+    height: 200px;
+    width: 200px;
+
+}

@@ -1,0 +1,841 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 78px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+header nav img{
+    width: 80px;
+    height: 30.38px;
+    margin-left: 150px;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+.d1{
+    height: 78px;
+    width: 995px;
+    float: right;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+.d2{
+    height: 100%;
+    width: 68%;
+    display: flex;
+    align-items: center;
+    padding-inline: 15px;
+    font-size: 16px;
+}
+.d2 a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 35px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    transition: 1s;
+}
+#a1{
+    color: #C59D5F;
+    font-weight: bold;
+}
+.d2 a:hover{
+    color: #C59D5F;
+}
+.d3{
+    width: 18%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+.d3 a{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 45px;
+    font-weight: bold;
+    transition: 1s;
+}
+.d3 a:hover{
+    color: #C59D5F;
+}
+.d1 i{
+    margin-left: 25px;
+    color: white;
+    transition: 1s;
+}
+.d1 i:hover{
+    color: #C59D5F;
+}
+.d4{
+    height: 800px;
+    width: 100%;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/05/slider1.jpg);
+    background-position: center;
+    background-position: top 100px;
+    background-size: 160% 120%;
+    align-items: center;
+    border: 0.5px solid;
+}
+.d4 h1{
+    color: white;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+    color: #C59D5F;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 250px;
+}
+#d4-h1{
+    font-size: 70px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: -0px;
+}
+.d4 img{
+    margin-top: 50px;
+    width: 352px;
+    height: 55px;
+}
+#d4-h1-2{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: -47px;
+
+}
+.d4 i{
+    color: white;
+    font-size: 40px;
+    margin-top: 250px;
+}
+.d5{
+    height: 1000px;
+    width: 100%;
+    margin-top: 120px;
+}
+.d6{
+    height: 342.4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.d7{
+    height: 100%;
+    width: 615px;
+}
+.d8{
+    height: 342.4px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.d7 h4{
+    font-size: 34px;
+    color: #b7b7b7;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+}
+.d7 h2{
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    color: #041527;
+    font-weight: bolder;
+}
+.d7 img{
+    margin-top: 10px;
+}
+.d7 p{
+    font-size: 16px;
+    color: #505050;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    line-height: 27px;
+    word-spacing: px;
+    letter-spacing: 0.1em;
+    margin-top: 15px;
+}
+.d7 a{
+    position: relative;
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+.d7 a:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+.d7 a:hover:before{
+    transform: scaleY(0);
+
+}
+.d7 a:after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #fff;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.d7 a:hover:after{
+    transform: scaleX(0);
+
+}
+.d7 a span{
+    position: relative;
+    z-index: 3;
+}
+.d10{
+    height: 100%;
+    width: 615px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.d9{
+    height: 343.25px;
+    width: 575px;
+    border-style:solid;
+    border-image-width: 5px;
+    border-image-source: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/09/home-image-1-2.jpg);
+    border-image-slice:100;
+    overflow: visible;
+    margin-left: 50px;
+}
+.d9 img{
+    height: 341.25px;
+    margin-top: -15px;
+    margin-left: -30px;
+    width: 575px;
+    transition: 0.7s;
+}
+.d9 img:hover{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.d11{
+    height: 343.25px;
+    width: 575px;
+    border-style:solid;
+    border-image-width: 5px;
+    border-image-source: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/09/home-image-1-1.jpg);
+    border-image-slice:100;
+    overflow: visible;
+}
+.d11 img{
+    height: 341.25px;
+    margin-top: -15px;
+    margin-left: -20px;
+    width: 575px;
+    transition: 0.7s;
+}
+.d11 img:hover{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+.d12{
+    height: 500px;
+    width: 100%;
+    border: 1px solid;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/04/three-img-parallax.png?id=8959);
+}
+
+.d12 h1{
+    color: white;
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 140px;
+    margin-left: 370px;
+}
+.d12 a{
+    font-size: 60px;
+    color: #C59D5F;
+    font-family: 'Pinyon Script', cursive;
+    text-decoration:none;
+    transition: 1s;
+}
+.d12 a:hover{
+    color: white;
+}
+.d13{
+    height: 1000px;
+    width: 1005;
+    margin-top: 100px;
+}
+.d13 h4{
+    font-size: 34px;
+    color: #b7b7b7;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+}
+.d13 h2{
+    font-size: 32px;
+    font-family: 'Lato', sans-serif;
+    color: #041527;
+    font-weight: 900;
+}
+.d13 img{
+    margin-top: 10px;
+}
+.d14{
+    height: 700px;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+.d15{
+    height: 337px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.d16{
+    height: 337px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.d17{
+    height: 100%;
+    width: 379.99px;
+    height: 307.2px;
+    margin: 0px 0px 30px;
+    padding: 40px 40px 45px;
+    border: 1px solid #dadada;
+}
+.d17:hover{
+    backface-visibility: visible;
+}
+.d17 img{
+    height: 53px;
+    width: 53px;
+}
+.d17 h4{
+    font-size: 18px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    margin-top: 7px;
+    z-index: 10;
+}
+.d17 p{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #505050;
+    margin-top: 30px;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+.d19{
+    height: 643.6px;
+    width: 100%;
+    border: 0.1px solid;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2021/08/parallax-img-1.jpg?id=13906);
+}
+
+.d19 #d19-2{
+    font-family: 'Pinyon Script', cursive;
+    color: #C59D5F;
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 150px;
+}
+.d19 strong{
+    color: white;
+    font-size: 60px;
+    font-family: 'Lato', sans-serif;
+    padding: 20px;
+    border: 5px dashed #C59D5F;
+    padding-inline: 350px;
+    margin-top: 100px;
+    line-height: 160px;
+}
+.d19 h4{
+    font-size: 18px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-top: 20px;
+
+}
+.d19 #d19-1{
+    font-family: 'Pinyon Script', cursive;
+    color: #C59D5F;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-top: 20px;
+    transition: 1s;
+}
+.d19 #d19-1:hover{
+    color: white;
+}
+.d20{
+    height: 710px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+.d21{
+    height: 632px;
+    width: 410px;
+    overflow: hidden;
+}
+.d22{
+    height: 33.33%;
+    width: 100%;
+    padding: 10px 90px 10px 0px;
+}
+.d22 h4{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: right;
+    transition: 0.5s;
+}
+.d22 h4:hover{
+    color: #C59D5F;
+}
+.d23 h4:hover{
+    color: #C59D5F;
+}
+.d22 p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #505050;
+    line-height: 30px;
+    text-align:right ;
+    font-weight: bolder;
+}
+.d22 img{
+    position: relative;
+    top: -100px;
+    margin-left: 335px;
+    height: 46px 46px;
+    transition: 0.5s;
+}
+.d22 img:hover{
+    transform: scale(1.1);
+}
+.d23 img:hover{
+    transform: scale(1.1);
+}
+.d23{
+    height: 33.33%;
+    width: 100%;
+    padding: 10px 0px 10px 90px;
+}
+.d23 h4{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-align: left;
+    transition: 0.5s;
+}
+.d23 p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color: #505050;
+    line-height: 30px;
+    text-align:left ;
+    font-weight: bolder;
+}
+.d23 img{
+    position: relative;
+    top: -100px;
+    margin-left: -78px;
+    height: 46px 46px;
+    transition: 0.5s;
+}
+.d24{
+    height: 638px;
+    width: 100%;
+    display: flex;
+}
+.d25{
+    height: 100%;
+    width: 506.33px;
+    background-color: #F4F1EA;
+    padding: 0px 100px 100px 100px;
+}
+.d26{
+    width: 1012.66px;
+    height: 100%;
+}
+.d27{
+    height: 253.16px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+}
+.d28{
+    height: 253.16px;
+    width: 100%;
+    display: flex;
+}
+.d29{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery1-640x480.jpg);
+}
+.d30{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery2-640x480.jpg);
+
+}
+.d31{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery3-640x480.jpg);
+
+}
+.d32{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery4-640x480.jpg);
+
+}
+.d33{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery5-640x480.jpg);
+
+}
+.d34{
+    height: 100%;
+    width: 337.55px;
+    background-size:cover;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2014/01/gallery6-640x480.jpg);
+
+}
+.d35{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.d35 p{
+    font-size: 140px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+}
+.d35:hover{
+    background-color: #C59D5F;
+    opacity: 1;
+    cursor: pointer;
+}
+.d35 p:hover{
+    opacity: 1;
+    transform: rotate(180deg);
+    color: black;
+    opacity: 1;
+    cursor: pointer;
+}
+.d25 h4{
+    color: #b7b7b7;
+    font-size: 34px;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+    margin-top: 100px;
+
+}
+.d25 h2{
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bolder;
+}
+.d25 h1{
+    margin-top: -20px;
+    color: #b7b7b7;
+}
+.d25 p{
+    font-size: 16px;
+    color: #505050;
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+    margin-top: 50px;
+}
+.d25 a{
+    position: relative;
+    display: inline-block;
+    padding: 13px 28px;
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-top: 80px;
+
+}
+.d25 a:before{
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% - 12px);
+    background: #F4F1EA;
+    transition: 0.5s ease-in-out;
+    transform: scaleY(1);
+    transition-delay: 0.5s;
+}
+.d25 a:hover:before{
+    transform: scaleY(0);
+
+}
+.d25 a:after{
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: -2px;
+    height: calc(100% + 4px);
+    width: calc(100% - 12px);
+    background: #F4F1EA;
+    transition: 0.5s ease-in-out;
+    transform: scaleX(1);
+}
+.d25 a:hover:after{
+    transform: scaleX(0);
+
+}
+.d25 a span{
+    position: relative;
+    z-index: 3;
+}
+.d36{
+    height: 800px;
+    width: 100%;
+    margin-top: 150px;
+}
+.d36 h4{
+    font-size: 34px;
+    color: #b7b7b7;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+
+}
+.d36 h2{
+    font-size: 34px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+
+}
+.d36 img{
+    height: 46px;
+    width: 46px;
+    margin-top: 10px;
+}
+.d37{
+    height: 505.98px;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+.d38{
+    height: 100%;
+    width: 379.99px;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/08/team1.jpg);
+}
+.d38:hover{
+    -webkit-filter: grayscale(0%);
+}
+.d39:hover{
+    -webkit-filter: grayscale(0%);
+}
+.d40:hover{
+    -webkit-filter: grayscale(0%);
+}
+
+.d39{
+    height: 100%;
+    width: 379.99px;
+    margin-left: 30px;
+    -webkit-filter: grayscale(100%);
+    transition: 0.5s;
+
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/08/team2.jpg);
+}
+.d40{
+    height: 100%;
+    width: 379.99px;
+    margin-left: 30px;
+    -webkit-filter:grayscale(100%);
+    transition: 0.5s;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2018/08/team3.jpg);
+}
+.d41{
+    height: 460px;
+    width: 100%;
+    border: 1px solid;
+    background-image: url(https://dtkudil.wpenginepowered.com/wp-content/uploads/2021/08/parallax-img-3.jpg?id=13908);
+}
+.d41 h3{
+    font-size: 60px;
+    color: white;
+    font-weight: bolder;
+    font-family: 'Lato', sans-serif;
+    margin-top: 150px;
+}
+.d41 h4{
+    font-size: 60px;
+    color: #C59D5F;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+}
+.d42{
+    margin-top: 150px;
+
+}
+.d43{
+    height: 475.5px;
+    width: 100%;
+    background-color: #131212;
+    margin-top: 150px;
+}
+.d44{
+    height: 70px;
+    width: 80%;
+    margin-top: 300px;
+    margin-left: 150px;
+    display: flex;
+}
+.d45{
+    height: 100%;
+    width: 33.33%;
+}
+.d45 i{
+    margin-left: 25px;
+    color: white;
+    transition: 1s;
+    line-height: 70px;
+}
+.d45 i:hover{
+    color: #C59D5F;
+}
+.d45 img{
+    width: 80px;
+    height: 30.38px;
+    line-height: 70px;
+    margin-top: 20px;
+}
+.d45 input{
+    height: 50.8px;
+    width: 100%;
+    padding: 15px 20px;
+    line-height: 70px;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid #505050;
+    font-size: 15px;
+    color: #505050;
+}
+.d46{
+    height: 174px;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 100px;
+    display: flex;
+}
+.d47{
+    height: 100%;
+    width: 33.33%;
+    border-right: 1px solid #505050;
+    font-size: 18px;
+    color: #808080;
+    font-family: 'Lato', sans-serif;
+
+}
+.d47 h6{
+    font-size: 25px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin: 0px 0px 10px;
+    padding: 0px 0px 10px;
+}
+.d47 #d47-h{
+    font-size: 32px;
+    color: #C59D5F;
+    font-family: 'Pinyon Script', cursive;
+    font-weight: lighter;
+}
+.d47 h4{
+    color: #C59D5F;
+    font-size: 16px;
+    margin: 0px 0px 20px;
+}
+.d47 strong{
+    font-size: 13px;
+    font-family: 'Lato', sans-serif;
+
+}
+.d47 a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+
+}
+.d48{
+    height: 72px;
+    width: 100%;
+    background-color: #000000;
+    margin-top: 70px;
+}
+.d48 p{
+    color: #808080;
+    font-size: 16px;
+    line-height: 72px;
+    font-family: 'Lato', sans-serif;
+
+}

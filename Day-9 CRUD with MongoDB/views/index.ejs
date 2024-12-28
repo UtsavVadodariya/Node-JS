@@ -206,10 +206,10 @@
 
     <h2>Add <p class="h2-p">Book</p></h2>
 
-    <form action="/addData" method="post">
+    <form action="/addData" method="post" enctype="multipart/form-data">
         <input hidden type="text" style="display: none;" placeholder="Enter Book Id" name="id">
         <label for="">Image URL</label>
-        <input type="text" placeholder="Enter Book Image URL" name="image">
+        <input type="file" placeholder="Enter Book Image URL" name="image">
         <label for="">Book Title</label>
         <input type="text" placeholder="Enter Book Name" name="name">
         <label for="">Author</label>

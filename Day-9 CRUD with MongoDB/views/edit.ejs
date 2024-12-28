@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2{
+            font-size: 41px;
+            font-weight: 600;
+            font-family: "Quicksand", sans-serif;
+            display: flex;
+            margin-left: 10.5%;
+            margin-top: 3%;
+        }
+        .h2-p{
+            font-size: 41px;
+            color: #e8ba96;
+            font-weight: 500;
+            margin-left: 0.8%;
+        }
+
+        body{
+            background-color: #f2f1ee;
+        }
+        form{
+            height: auto;
+            padding-top: 2%;
+            padding-left: 4.5%;
+            padding-bottom: 5%;
+            /* padding:5%; */
+            margin-left: 5.5%;
+        }
+        input{
+            height: 47px;
+            width: 404px;
+            border: 1px solid #e8ba96;
+            padding: 15px 20px 15px 20px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            line-height: 13px;
+            font-weight: 500;
+            font-family: "Quicksand", sans-serif;
+            border-radius: 30px;
+            display: block;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        label{
+            font-family: "Quicksand", sans-serif;
+            font-weight: 700;
+            margin-left: 20px;
+        }
+        button{
+            height: 42px;
+            width: 175px;
+            font-size: 14px;
+            background-color: #e7e3e3;
+            color: black;
+            font-weight: 600;
+            font-family: "Quicksand", sans-serif;
+            padding: 12px 30px 12px 30px;
+            border: 1px solid #fff;
+            line-height: 14px;
+            border-radius: 30px;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Edit <p class="h2-p">Book</p></h2>
+
+    <form action="/updateData" method="post">
+        <label for="" style="display: none;">Id</label>
+        <input type="text" style="display: none;" placeholder="Enter Book Id" hidden name="id" value="<%=data.id%>">
+        <label for="">Image</label>
+        <input type="text"  placeholder="Enter Book Image URL" name="image" value="<%=data.image%>">
+        <label for="">Book Title</label>
+        <input type="text" placeholder="Enter Book Name" name="name" value="<%=data.name%>">
+        <label for="">Author</label>
+        <input type="text" placeholder="Enter Author Name" name="author" value="<%=data.author%>">
+        <label for="">Language</label>
+        <input type="text" placeholder="Enter Language" name="language" value="<%=data.language%>">
+        <label for="">Pages</label>
+        <input type="text" placeholder="Enter Book Pages" name="pages" value="<%=data.pages%>">
+        <label for="">Publish Date</label>
+        <input type="text" placeholder="Enter Book Published" name="publishDate" value="<%=data.publishDate%>">
+        <label for="">Price</label>
+        <input type="text" placeholder="Enter Book Price" name="price" value="<%=data.price%>">
+        <button type="submit">Update Data</button>
+    </form>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ const Storage = multer.diskStorage({
         cb(null, "uploads/");
     },
     filename:(req,file,cb)=>{
-        cb(null, file.fieldname + " " + Date.now());
+        cb(null, file.fieldname + " " + Date.now() + path.extname(file.originalname));
     }
 });
 
@@ -70,5 +70,5 @@ app.get("/deleteData" , async (req,res)=>{
 });
 
 app.listen(port, (err) => {
-    err ? console.log(err) : console.log("server started on port : " + port)
+    err ? console.logaaa(err) : console.log("server started on port : " + port)
 });

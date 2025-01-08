@@ -12,7 +12,7 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded())
 app.use("/uploads",express.static(path.join(__dirname, 'uploads')));
 
-
+    
 const multer = require("multer");
 
 const Storage = multer.diskStorage({
@@ -37,11 +37,9 @@ app.get("/", async (req, res) => {
 app.post("/addData",upload, async (req, res) => {
     req.body.image = req.file.path
     await schema.create(req.body)
-        .then(data => {
+        .then((data) => {
             res.redirect("/")
         })
-    // let data = await schema.create(req.body);
-    // data && res.redirect("/");
 })
 app.get("/deleteData", async (req, res) => {
     await schema.findByIdAndDelete(req.query.id)

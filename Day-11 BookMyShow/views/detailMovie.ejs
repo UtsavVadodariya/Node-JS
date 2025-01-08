@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <header class="h-[70px] w-[100%] flex justify-center items-center border">
+
+    
+        <nav>
+            <div class="main">
+                <div class="logo search">
+                    <img src="/Images/logo.png" alt="">
+                    <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                    <input type="search" placeholder="Search for Movies,Events,Plays,Sports And Activities">
+                </div>
+                <div class="button">
+                    <div class="loction">
+                        <span>Rajkot</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="movie w-[20%] flex items-center">
+                        <button
+                            class="h-[35px] px-[20px] bg-[#d54048] text-white rounded-[5px] flex gap-[10px] items-center"
+                            onclick="handleAddMovie()"><i class="fa-solid fa-arrow-up-from-bracket"></i> Add Movie</button>
+                    </div>
+                    <div class="bar">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+    <div class="subnav">
+        <div class="main1">
+            <div class="d1">
+                <a href="" style="padding-left: 0px;">Movies</a>
+                <a href="">Stream</a>
+                <a href="">Events</a>
+                <a href="">Plays</a>
+                <a href="">Sports</a>
+                <a href="">Activities</a>
+            </div>
+            <div class="d2">
+                <a href="" style="padding-left: 0px;">ListYourShow</a>
+                <a href="">Corporates</a>
+                <a href="">Offers</a>
+                <a href="" style="padding-right: 0px;">Gift Cards</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="bgDiv h-[480px] border border-black w-[100%] relative flex justify-center ">
+        <img class="h-[100%] w-[100%]" src="<%= singleData.bgImage%>" alt="">
+
+        <div class="bgdiv absolute h-[100%] w-[100%] top-[0px]">
+            <div class="h-[100%] w-[1440px] border border-white flex items-center">
+            <div class="movieImage ms-[7.5%] w-[18%]">
+                <img src="<%= singleData.image%>" class="h-[392px] w-[261px] rounded-[5px]" alt="">
+            </div>
+
+            <div class="movieDetails ms-[30px] text-white w-[30%] h-[50vh]">
+                <h1 class="text-[36px] font-[700] text-[#fff] mt-[50px]"><%=singleData.name%></h1>
+
+                <div class="rating flex items-center justify-between h-[64px] bg-[#333333] w-[446px] mt-[16px] mb-[10px] px-[12px] py-[24px] rounded-[8px]">
+                    <p class="ms-[10px]"><i class="fa-solid fa-star text-[#ec757f] text-[16px]"></i><h5 class="text-[18px] text-white ms-[-85px]"><%=singleData.rating%>  / 10</h5></p>
+
+                    <button class="bg-white text-black h-[40px] w-[100.33px] px-[8px] py-[12px] text-[16px] font-[500] flex justify-center items-center rounded-[8px]">Rate Now</button>
+                </div>
+
+                <div class="h-[28px] w-[60px] mt-[8px] px-[8px] py-[2px] bg-white text-black flex items-center">
+                    <p class="uppercase"><%=singleData.dimensions%></p>
+                </div>
+                <div class="h-[28px] w-[80px] mt-[8px] px-[8px] py-[2px] bg-white text-black flex items-center">
+                    <p class="uppercase"><%=singleData.language%></p>
+                </div>
+                <div class="h-[28px] w-[80px] mt-[8px] px-[8px] py-[2px] text-white flex items-center">
+                    <span class="capitalize text-[16px]"><%=singleData.timing%></span>
+                    <i class="fa-solid fa-circle text-[5px] ml-[7px] mr-[7px]"></i>
+                    <span class="capitalize text-[16px]"><%=singleData.category%></span>
+                    <i class="fa-solid fa-circle text-[5px] ml-[7px] mr-[7px]"></i>
+                    <span class="capitalize text-[16px]"><%=singleData.releaseDate%></span>
+                </div>
+
+                <button class="h-[48px] w-[214.8px] px-[12px] py-[8px] rounded-[8px] bg-[#f94363] mt-[20px] font-[500]">Book tickets</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

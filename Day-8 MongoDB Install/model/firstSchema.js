@@ -7,7 +7,7 @@ const schema = mongoose.Schema({
     },
     subject:{
         type: String,
-        require:true,
+        require:true
     },
     
 })

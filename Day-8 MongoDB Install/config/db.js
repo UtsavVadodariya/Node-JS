@@ -8,4 +8,4 @@ db.once("open",(err)=>{
     err? console.log(err) : console.log("db connect");    
 });
 
-module. exports = db
+module. exports = db;

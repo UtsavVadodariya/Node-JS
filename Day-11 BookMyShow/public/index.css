@@ -14,21 +14,15 @@
     visibility: hidden;
 }
 
-
- 
 .editDiv{
     background-color: white;
      position: absolute;
      top: 51vh;
      right: -30px;
-     transition-duration: 0.5s;
 }
-
-
 .movieData:hover .editDiv{
    right: 10px;
 }
-
 .editIcon{
     height: 30px;
     width: 30px;
@@ -39,11 +33,6 @@
     justify-content: center;
     align-items: center; 
     font-size: 16px;
-}
-
-.editIcon:hover{
-    background-color: #399043;
-    color: #e6f9eb;
 }
 
 .deleteIcon{
@@ -57,11 +46,6 @@
     align-items: center; 
     font-size: 16px;
     margin-top: 15px;
-}
-
-.deleteIcon:hover{
-    background-color: #d32f2f;
-    color: #fdecea; 
 }
 .bgDiv{
     box-shadow: -5px 0 10px rgba(0, 0, 0, 0.2), 5px 0 10px rgba(0, 0, 0, 0.2); /* Shadows on both sides */

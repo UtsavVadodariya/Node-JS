@@ -97,45 +97,87 @@
                                     <div class="form-group row">
                                         <label for="fname" class="col-sm-3 text-right control-label col-form-label">First Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="fname" placeholder="First Name Here" name="firstname">
+                                            <input type="text" class="form-control" id="fname" placeholder="First Name Here" name="firstname" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Last Name</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="lname" placeholder="Last Name Here" name="lastname">
+                                            <input type="text" class="form-control" id="lname" placeholder="Last Name Here" name="lastname" required>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
+                                    <div class="form-group row">    
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Email Id</label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="email" placeholder="Email Id Here" name="email">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Id Here" name="email" required>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label for="lname" class="col-sm-3 text-right control-label col-form-label">Password</label>
                                         <div class="col-sm-9">
-                                            <input type="password" class="form-control" id="lname" placeholder="Password Here" name="password">
+                                            <input type="password" class="form-control" id="lname" placeholder="Password Here" name="password" required>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="form-group row">
+                                        <label for="lname" class="col-sm-3 text-right control-label col-form-label">Contact No.</label>
+                                        <div class="col-sm-9">
+                                          <input type="tel" inputmode="numeric" oninput="this.value = this.value.replace(/[^0-9+]/g, '')" maxlength="10" name="number" id="lname" class="form-control" placeholder="Mobile Number" required>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group row">
+                                        <label class="col-md-3 text-right">Gender</label>
+                                        <div class="col-md-9">
+                                            <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customControlValidation1" name="radio" required>
+                                                <label class="custom-control-label" for="customControlValidation1">Male</label>
+                                            </div>
+                                             <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio" required>
+                                                <label class="custom-control-label" for="customControlValidation2">Female</label>
+                                            </div>
+                                             <div class="custom-control custom-radio">
+                                                <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio" required>
+                                                <label class="custom-control-label" for="customControlValidation3">Other</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="email1" class="col-sm-3 text-right control-label col-form-label">Company</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="email1" placeholder="Company Name Here" name="company">
+                                        <label class="col-md-3 text-right">Hobby</label>
+                                        <div class="col-md-9">
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing1">
+                                                <label class="custom-control-label" for="customControlAutosizing1">Reading</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing2">
+                                                <label class="custom-control-label" for="customControlAutosizing2">Writing</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-sm-2">
+                                                <input type="checkbox" class="custom-control-input" id="customControlAutosizing3">
+                                                <label class="custom-control-label" for="customControlAutosizing3">Other</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Contact No</label>
-                                        <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="cono1" placeholder="Contact No Here" name="number">
+                                        <label class="col-md-3 text-right">Profile Picture </label>
+                                        <div class="col-md-9">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="validatedCustomFile" name="image" required>
+                                                <label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+                                                <div class="invalid-feedback">Invalid Formate</div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="form-group row">
-                                        <label for="cono1" class="col-sm-3 text-right control-label col-form-label">Message</label>
-                                        <div class="col-sm-9">
-                                            <textarea class="form-control" name="message"></textarea>
+                                    <label class="m-t-15 text-right">Autoclose Datepicker</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                                         </div>
                                     </div>
+        
                                 </div>
                                 <div class="border-top">
                                     <div class="card-body">
@@ -251,4 +293,4 @@
     </script>
 </body>
 
-</html>
+</html> 

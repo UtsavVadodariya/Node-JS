@@ -6,10 +6,12 @@ const app = express();
 const path = require("path")
 const db = require("./config/db");
 const schema = require("./model/firstSchema");
+const cookie = require("cookie-parser");
 
 app.set("view engine","ejs");
 app.use(express.urlencoded())
 app.use(express.static('public'));
+app.use(cookie())
 
 app.use("/", require("./routes/route"))
 

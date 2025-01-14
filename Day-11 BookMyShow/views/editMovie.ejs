@@ -19,13 +19,14 @@
 
 <body>
     <div class="div flex justify-center items-center">
-        <form action="/updateMovie" enctype="multipart/form-data" method="post" class="h-[70vh] mt-[15vh] bg-white w-[35%] border border-black rounded-[5px]">
+        <form action="/updateMovie" method="post" enctype="multipart/form-data"  class="h-[70vh] mt-[15vh] bg-white w-[35%] border border-black rounded-[5px]">
             <p class="text-center text-3xl mt-3">Edit Movie</p>
 
             <input type="text" hidden value="<%= data.id%>" placeholder="Enter Id" name="id" id="">
             <div class="input w-[80%] ms-[10%] mt-3">
                 <label for="">Movie Image :</label><br>
                 <input type="file" name="image">
+                <img src="<%= data.image%>" alt="">
             </div>
 
             <div class="input w-[80%] ms-[10%] mt-3">

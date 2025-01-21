@@ -6,52 +6,31 @@ module.exports.loginuser = (req, res) => {
     res.render("login")
 }
 module.exports.login = async (req, res) => {
-    let admin = await schema.findOne({ email: req.body.email });
-    if (admin) {
-        if (admin.password == req.body.password) {
-            res.cookie("adminData", admin);
-            res.redirect("/dashboard");
-        }
-        else {
-            res.redirect("/");
-        }
-    }
-    else {
-        res.redirect("/")
-    }
+   res.redirect("/dashboard")
 }
 module.exports.logOut= async (req,res)=>{
-    res.clearCookie("adminData")
+    res.session.destroy();
     res.redirect("/");
 }
 module.exports.dashboard = (req, res) => {
-    req.cookies.adminData ? res.render("dashboard") : res.redirect("/");
+    res.render("dashboard");
 };
 module.exports.addAdmin = (req, res) => {
-    req.cookies.adminData ? res.render("addAdmin") : res.redirect("/");
+   res.render("addAdmin")
 };
 module.exports.addData = async (req, res) => {
-    if (req.cookies.adminData) {
         req.body.image = req.file.path
         await schema.create(req.body)
             .then((data) => {
                 res.redirect("/addAdmin");
             })
-    }
-    else {
-        res.redirect("/")
-    }
+  
 }
 module.exports.viewAdmin = async (req, res) => {
-    if (req.cookies.adminData) {
         await schema.find({})
             .then((data) => {
                 res.render("viewAdmin", { data });
             })
-    }
-    else {
-        res.redirect("/")
-    }
 
 }
 module.exports.editAdmin = async (req, res) => {
@@ -71,4 +50,11 @@ module.exports.updateData = async (req, res) => {
         .then((data) => {
             res.redirect("/viewAdmin")
         })
+}
+
+module.exports.deleteAdmin = async (req,res)=>{
+    await schema.findByIdAndDelete(req.query.id)
+    .then((data)=>{
+        res.redirect("/");
+    })
 }

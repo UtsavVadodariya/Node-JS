@@ -20,10 +20,6 @@ const schema = mongoose.Schema({
     number: {
         type: Number,
         required: String,
-    },
-    radio: {
-        type: Ra,
-        required: true
     }
 })
 

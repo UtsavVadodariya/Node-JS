@@ -1,9 +1,12 @@
 const schema = require("../model/firstSchema")
+const flash = require("../middleware/flashConnect")
+const mailer = require("../middleware/mailer")
 
 module.exports.login = (req, res) => {
     res.render("login")
 }
 module.exports.userLogin = async (req, res) => {
+    req.flash("success", "Login SucessFully !");
     res.redirect("/dashboard")
     // let admin = await schema.findOne({ email: req.body.email });
     // if (admin) {
@@ -94,5 +97,41 @@ module.exports.changePassword = async (req, res) => {
     else {
         console.log("old password is wrong");
 
+    }
+}
+
+
+module.exports.recoverPass = async (req, res) => {
+    let admin = await schema.findOne({ email: req.body.email });
+
+    if (!admin) {
+        return res.redirect("/")
+    }
+
+    let otp = Math.floor(Math.random() * 1000 + 9000)
+    mailer.sendOtp(req.body.email, otp)
+
+    req.session.otp = otp;
+    req.session.adminData = admin;
+
+    res.render("verifyOtp")
+
+}
+module.exports.verifyPass = async (req, res) => {
+    let otp = req.session.otp;
+    let admin = req.session.adminData
+
+    if (req.body.otp == otp) {
+        if (req.body.newPass == req.body.conPass) {
+            let adminData = await schema.findByIdAndUpdate(admin._id, { password: req.body.newPass })
+            adminData && res.redirect("/logout")
+        }
+        else {
+            console.log("new password and conform pass in not match");
+
+        }
+    }
+    else {
+        res.redirect("/logout")
     }
 }

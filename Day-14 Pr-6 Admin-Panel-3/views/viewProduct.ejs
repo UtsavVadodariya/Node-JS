@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/x-icon" />
+  <title>Tables | PlainAdmin Demo</title>
+
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/assets/css/lineicons.css" />
+  <link rel="stylesheet" href="/assets/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" href="/assets/css/fullcalendar.css" />
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+
+<body>
+  <!-- ======== Preloader =========== -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+  <!-- ======== Preloader =========== -->
+
+  <!-- ======== sidebar-nav start =========== -->
+  <%- include("aside")%>
+    <!-- ======== sidebar-nav end =========== -->
+
+    <!-- ======== main-wrapper start =========== -->
+    <main class="main-wrapper">
+      <!-- ========== header start ========== -->
+      <%- include("header")%>
+        <!-- ========== header end ========== -->
+
+        <!-- ========== table components start ========== -->
+        <section class="table-components">
+          <div class="container-fluid">
+            <!-- ========== title-wrapper start ========== -->
+            <div class="title-wrapper pt-30">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="title">
+                    <h2>Tables</h2>
+                  </div>
+                </div>
+                <!-- end col -->
+                <div class="col-md-6">
+                  <div class="breadcrumb-wrapper">
+                    <nav aria-label="breadcrumb">
+                      <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                          <a href="#0">Dashboard</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                          Admins
+                        </li>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- ========== title-wrapper end ========== -->
+
+            <!-- ========== tables-wrapper start ========== -->
+            <div class="tables-wrapper">
+
+              <!-- end row -->
+
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="card-style mb-30">
+                    <h6 class="mb-10">Admin Details</h6>
+                    <p class="text-sm mb-20">
+                      For basic styling—light padding and only horizontal
+                      dividers—use the class table.
+                    </p>
+                    <div class="table-wrapper table-responsive">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>
+                              <h6>#</h6>
+                            </th>
+                            <th>
+                              <h6>Sub Category Name</h6>
+                            </th>
+                            <th>
+                              <h6>Product Name</h6>
+                            </th>
+                            <th>
+                              <h6>Product Price</h6>
+                            </th>
+                            <th>
+                              <h6>Product Description</h6>
+                            </th>
+                            <th>
+                              <h6>Action</h6>
+                            </th>
+                          </tr>
+                          <!-- end table row-->
+                        </thead>
+                        <tbody>
+                          <%data.map((e,i)=>{%>
+                            <tr>
+                              <td>
+                                  <p><%= i + 1%></p>                                
+                              </td>
+                              <td class="min-width">
+                                <p>
+                                  <%=e.subcatId.subCatName%>
+                                </p>
+                              </td>
+                              <td class="min-width">
+                                <p>
+                                  <%=e.productName%>
+                                </p>
+                              </td>
+                              <td class="min-width">
+                                <p>
+                                  <%=e.productPrice%>
+                                </p>
+                              </td>
+                              <td class="min-width">
+                                <p>
+                                  <%=e.productDescription%>
+                                </p>
+                              </td>
+                              <td>
+                                <div class="action">
+                                  <button class="text-danger">
+                                    <a href="/product/editProduct?id=<%=e.id%>"><i class="lni lni-pencil-alt"></i></a>
+                                    <a href="/product/deleteProduct?id=<%=e.id%>"><i class="lni lni-trash-can"></i></a>
+                                  </button>
+                                </div>
+                              </td>
+                            </tr>
+                            <%})%>
+                              <!-- end table row -->
+                        </tbody>
+                      </table>
+                      <!-- end table -->
+                    </div>
+                  </div>
+                  <!-- end card -->
+                </div>
+                <!-- end col -->
+              </div>
+              <!-- end row -->
+            </div>
+            <!-- ========== tables-wrapper end ========== -->
+          </div>
+          <!-- end container -->
+        </section>
+        <!-- ========== table components end ========== -->
+
+        <!-- ========== footer start =========== -->
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6 order-last order-md-first">
+                <div class="copyright text-center text-md-start">
+                  <p class="text-sm">
+                    Designed and Developed by
+                    <a href="https://plainadmin.com" rel="nofollow" target="_blank">
+                      PlainAdmin
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <!-- end col-->
+              <div class="col-md-6">
+                <div class="terms d-flex justify-content-center justify-content-md-end">
+                  <a href="#0" class="text-sm">Term & Conditions</a>
+                  <a href="#0" class="text-sm ml-15">Privacy & Policy</a>
+                </div>
+              </div>
+            </div>
+            <!-- end row -->
+          </div>
+          <!-- end container -->
+        </footer>
+        <!-- ========== footer end =========== -->
+    </main>
+    <!-- ======== main-wrapper end =========== -->
+
+    <!-- ========= All Javascript files linkup ======== -->
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/Chart.min.js"></script>
+    <script src="/assets/js/dynamic-pie-chart.js"></script>
+    <script src="/assets/js/moment.min.js"></script>
+    <script src="/assets/js/fullcalendar.js"></script>
+    <script src="/assets/js/jvectormap.min.js"></script>
+    <script src="/assets/js/world-merc.js"></script>
+    <script src="/assets/js/polyfill.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
